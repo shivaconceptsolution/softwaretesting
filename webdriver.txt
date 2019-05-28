@@ -1,0 +1,97 @@
+<h1 class="abc">Hello World</h1>
+
+findElement(By.className("abc"));
+
+
+by.linkText():-
+
+it is used to locate hyperlink from  HTML web page using LINK Text
+
+
+<a href="www.google.com">google</a>
+
+findElement(By.linkText("google"));
+
+if it not work than we will use By.xpath();
+
+
+by.partialLinkText():-
+
+it is used to locate hyperlink from HTML web page using part of link text.
+
+<a href="www.google.com">click to navigate google</a>
+
+findElement(By.partialLinkText("click"))
+
+by.Tagname():-
+
+it is used to find element using TagName.if element do not contain any attribute.
+
+<h1>Welcome in Xyz</h1>
+
+findElement(By.tagName("h1"));
+
+limitation:-  it will locate first tag in HTML Web page.
+
+............................................................................................
+
+By.cssSelector():-
+
+it is used to find element based on css selector engine.
+it will be used when same id or same classname will be used in multiple HTML Tag.
+
+<p class="abc">Hello</p>
+<br>
+<input type="text" class="abc" />
+<br>
+
+<br>
+<h1 class="abc">Hello</h1>
+
+findElement(by.cssSelector("h1.abc"))  //   tagname#idname
+
+
+....................................................................................................
+
+By.xpath():-  it is used to find element using XPATH option .it provide complete path from root to current.
+
+it take more time to find element hence we should always use XPath as a last option  as a locators.
+
+
+findElement(By.xpath());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
